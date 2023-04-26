@@ -10,21 +10,8 @@ import './App.css';
 
 function App() {
 
-  const [ people, setPeople ] = useState([
-    {
-      name: 'Lebron James',
-      url: '',
-      age: 36,
-      notes: 'Alergit to staying on the same Team'
-    },
-    {
-      name: 'Kobe Briant',
-      url: '',
-      age: 36,
-    }
-])
+  const [ people, setPeople ] = useState([])
 
- people.map(per => per.age = '45') // provides an arror
 
   return (
     <div className="App">
