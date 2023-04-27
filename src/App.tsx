@@ -1,19 +1,12 @@
 import React, { useState } from 'react';
 import './App.css';
 import List from './components/List';
+import { MyTypedArrayOfObjects } from './types/types';
 
-interface IState {
-  people: {
-    name: string,
-    age: number,
-    url: string,
-    note?: string | number
-  }[]
-}
 
 function App() {
 
-  const [people, setPeople] = useState<IState["people"]>([
+  const [people, setPeople] = useState<MyTypedArrayOfObjects["people"]>([
     {
       name: "LeBron James",
       age: 35,
