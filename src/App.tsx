@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import List from './components/List';
 import { MyTypedArrayOfObjects } from './types/types';
+import AddToList from './components/AddToList';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
     <div className="App">
       <h1>People invited to my Party</h1>
       <List people={people}/>
+      <AddToList people={people} setPeople={setPeople}/>
     </div>
   );
 }

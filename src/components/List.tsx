@@ -4,7 +4,6 @@ import { MyTypedArrayOfObjects } from '../types/types'
 
 const List : React.FC<MyTypedArrayOfObjects> = ({people}) => {
 
-
   const renderList = (): JSX.Element[] => {
     return people.map(person => (
         <li className="List">
